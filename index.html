@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devang Jain - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <canvas id="particleCanvas"></canvas>
+    <canvas id="csCanvas"></canvas>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="#home" class="logo">
+            <canvas id="logoCanvas" width="180" height="44"></canvas>
+        </a>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="glitch" data-text="Hi, I'm Devang Jain">Hi, I'm Devang Jain</h1>
+            <p class="typewriter"></p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="resume.html" target="_blank" class="btn btn-secondary">📄 My Resume</a>
+                <a href="#contact" class="btn btn-outline">Get In Touch</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="photo-container">
+                        <div class="photo-3d">
+                            <img src="devpic.jpeg" alt="Your Photo" class="profile-photo">
+                            <div class="photo-border"></div>
+                            <div class="photo-glow"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p>I'm a 24-year-old aspiring software developer currently gaining practical experience through an internship at <strong style="color:var(--primary-color)">ISRO LEOS</strong>, where I'm working on event-based camera systems — including calibration, error reduction, and algorithm implementation.</p>
+                    <p>I have a strong interest in <strong style="color:var(--primary-color)">full-stack and frontend development</strong> and am currently building an Android-based application focused on intelligent outfit recommendations.</p>
+                    <p>I have a solid foundation in <strong style="color:var(--primary-color)">C++</strong> and am actively preparing for technical interviews while continuously enhancing my problem-solving skills to build a successful career in the technology sector.</p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <h3 class="counter" data-target="4">0</h3>
+                            <p>Projects</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="counter" data-target="1">0</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>ISRO</h3>
+                            <p>Internship</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+
+            <div class="proj-grid">
+
+                <!-- Card 1 -->
+                <div class="proj-card">
+                    <div class="proj-banner" style="--c1:#667eea;--c2:#764ba2;">
+                        <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                            <rect width="400" height="200" fill="url(#p1)"/>
+                            <defs><linearGradient id="p1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#667eea"/><stop offset="100%" stop-color="#764ba2"/></linearGradient></defs>
+                            <rect x="50" y="25" width="300" height="140" rx="8" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+                            <rect x="50" y="25" width="300" height="24" rx="8" fill="rgba(255,255,255,0.15)"/>
+                            <circle cx="68" cy="37" r="4" fill="#ff5f57"/><circle cx="82" cy="37" r="4" fill="#febc2e"/><circle cx="96" cy="37" r="4" fill="#28c840"/>
+                            <rect x="70" y="65" width="100" height="10" rx="5" fill="rgba(255,255,255,0.5)"/>
+                            <rect x="70" y="83" width="180" height="7" rx="3" fill="rgba(255,255,255,0.25)"/>
+                            <rect x="70" y="97" width="140" height="7" rx="3" fill="rgba(255,255,255,0.2)"/>
+                            <rect x="70" y="118" width="55" height="38" rx="5" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.25)" stroke-width="1"/>
+                            <rect x="138" y="118" width="55" height="38" rx="5" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.25)" stroke-width="1"/>
+                            <rect x="206" y="118" width="55" height="38" rx="5" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.25)" stroke-width="1"/>
+                        </svg>
+                        <div class="proj-num">01</div>
+                    </div>
+                    <div class="proj-body">
+                        <div class="proj-header">
+                            <h3>TechEduca</h3>
+                            <a href="https://github.com/devangdpr" target="_blank" class="proj-gh">↗</a>
+                        </div>
+                        <p>Responsive educational website for students to browse & enroll in courses with improved mobile UX.</p>
+                        <div class="proj-tags">
+                            <span class="tech-tag lang-tag html">HTML</span>
+                            <span class="tech-tag lang-tag css">CSS</span>
+                            <span class="tech-tag lang-tag sql">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="proj-card">
+                    <div class="proj-banner" style="--c1:#f093fb;--c2:#f5576c;">
+                        <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                            <rect width="400" height="200" fill="url(#p2)"/>
+                            <defs><linearGradient id="p2" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#f093fb"/><stop offset="100%" stop-color="#f5576c"/></linearGradient></defs>
+                            <rect x="40" y="20" width="320" height="155" rx="8" fill="rgba(0,0,0,0.18)" stroke="rgba(255,255,255,0.25)" stroke-width="1.5"/>
+                            <line x1="40" y1="70" x2="360" y2="70" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+                            <line x1="40" y1="120" x2="360" y2="120" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+                            <line x1="160" y1="20" x2="160" y2="175" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+                            <line x1="280" y1="20" x2="280" y2="175" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+                            <polyline points="80,155 130,110 190,130 250,70 310,88" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="2" stroke-dasharray="5,3"/>
+                            <circle cx="80" cy="155" r="6" fill="white" opacity="0.8"/>
+                            <circle cx="190" cy="130" r="6" fill="white" opacity="0.8"/>
+                            <circle cx="310" cy="88" r="8" fill="white"/>
+                            <circle cx="310" cy="88" r="4" fill="#f5576c"/>
+                            <circle cx="310" cy="88" r="14" fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="1.5"/>
+                        </svg>
+                        <div class="proj-num">02</div>
+                    </div>
+                    <div class="proj-body">
+                        <div class="proj-header">
+                            <h3>Location Tracker</h3>
+                            <a href="https://github.com/devangdpr" target="_blank" class="proj-gh">↗</a>
+                        </div>
+                        <p>Consent-based real-time location sharing with map visualization, history & geofencing features.</p>
+                        <div class="proj-tags">
+                            <span class="tech-tag lang-tag python">Python</span>
+                            <span class="tech-tag lang-tag python">Libraries</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="proj-card">
+                    <div class="proj-banner" style="--c1:#4facfe;--c2:#00f2fe;">
+                        <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                            <rect width="400" height="200" fill="url(#p3)"/>
+                            <defs><linearGradient id="p3" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#4facfe"/><stop offset="100%" stop-color="#00f2fe"/></linearGradient></defs>
+                            <rect x="155" y="10" width="90" height="170" rx="12" fill="rgba(0,0,0,0.25)" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/>
+                            <rect x="163" y="24" width="74" height="130" rx="4" fill="rgba(255,255,255,0.08)"/>
+                            <rect x="168" y="30" width="30" height="38" rx="4" fill="rgba(255,255,255,0.22)"/>
+                            <rect x="203" y="30" width="30" height="38" rx="4" fill="rgba(255,255,255,0.22)"/>
+                            <rect x="168" y="74" width="30" height="38" rx="4" fill="rgba(255,255,255,0.22)"/>
+                            <rect x="203" y="74" width="30" height="38" rx="4" fill="rgba(255,255,255,0.35)"/>
+                            <text x="218" y="98" text-anchor="middle" font-size="14" fill="#fff">★</text>
+                            <rect x="168" y="120" width="65" height="6" rx="3" fill="rgba(255,255,255,0.4)"/>
+                            <text x="290" y="65" font-size="24" fill="rgba(255,255,255,0.7)">✨</text>
+                            <text x="68" y="90" font-size="20" fill="rgba(255,255,255,0.55)">👗</text>
+                        </svg>
+                        <div class="proj-num">03</div>
+                    </div>
+                    <div class="proj-body">
+                        <div class="proj-header">
+                            <h3>Outfit Recommender</h3>
+                            <a href="https://github.com/devangdpr" target="_blank" class="proj-gh">↗</a>
+                        </div>
+                        <p>Android app with intelligent outfit suggestions based on user preferences and smart AI logic.</p>
+                        <div class="proj-tags">
+                            <span class="tech-tag lang-tag java">Java</span>
+                            <span class="tech-tag lang-tag android">Android</span>
+                            <span class="tech-tag lang-tag sql">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="proj-card proj-card--featured">
+                    <div class="proj-banner" style="--c1:#43e97b;--c2:#38f9d7;">
+                        <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                            <rect width="400" height="200" fill="url(#p4)"/>
+                            <defs><linearGradient id="p4" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#43e97b"/><stop offset="100%" stop-color="#38f9d7"/></linearGradient></defs>
+                            <rect x="110" y="35" width="180" height="120" rx="12" fill="rgba(0,0,0,0.25)" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/>
+                            <circle cx="200" cy="95" r="40" fill="rgba(0,0,0,0.3)" stroke="rgba(255,255,255,0.35)" stroke-width="1.5"/>
+                            <circle cx="200" cy="95" r="27" fill="rgba(0,0,0,0.4)" stroke="rgba(255,255,255,0.25)" stroke-width="1"/>
+                            <circle cx="200" cy="95" r="14" fill="rgba(56,249,215,0.25)" stroke="rgba(255,255,255,0.4)" stroke-width="1"/>
+                            <circle cx="200" cy="95" r="5" fill="rgba(255,255,255,0.8)"/>
+                            <circle cx="148" cy="62" r="3" fill="white" opacity="0.9"/>
+                            <circle cx="252" cy="58" r="3" fill="#ff4444" opacity="0.9"/>
+                            <circle cx="140" cy="128" r="3" fill="white" opacity="0.9"/>
+                            <circle cx="260" cy="132" r="3" fill="#ff4444" opacity="0.9"/>
+                            <rect x="290" y="18" width="78" height="20" rx="5" fill="rgba(0,0,0,0.35)" stroke="rgba(255,255,255,0.35)" stroke-width="1"/>
+                            <text x="329" y="32" text-anchor="middle" fill="white" font-size="9" font-family="Arial" font-weight="bold">ISRO LEOS</text>
+                        </svg>
+                        <div class="proj-num">04</div>
+                        <span class="proj-badge">Internship</span>
+                    </div>
+                    <div class="proj-body">
+                        <div class="proj-header">
+                            <h3>Event-Based Camera</h3>
+                            <a href="https://github.com/devangdpr" target="_blank" class="proj-gh">↗</a>
+                        </div>
+                        <p>ISRO LEOS — calibration, error reduction & algorithm implementation for event-based camera systems.</p>
+                        <div class="proj-tags">
+                            <span class="tech-tag lang-tag cpp">C++</span>
+                            <span class="tech-tag lang-tag python">Python</span>
+                            <span class="tech-tag lang-tag cv">OpenCV</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+
+            <!-- Orbit rings visual -->
+            <div class="skills-orbit-wrapper">
+                <div class="orbit-center">
+                    <span>DEV</span>
+                </div>
+                <div class="orbit orbit-1">
+                    <div class="orbit-item" style="--angle:0deg"><span>C++</span></div>
+                    <div class="orbit-item" style="--angle:72deg"><span>Java</span></div>
+                    <div class="orbit-item" style="--angle:144deg"><span>Python</span></div>
+                    <div class="orbit-item" style="--angle:216deg"><span>HTML</span></div>
+                    <div class="orbit-item" style="--angle:288deg"><span>CSS</span></div>
+                </div>
+                <div class="orbit orbit-2">
+                    <div class="orbit-item" style="--angle:30deg"><span>JS</span></div>
+                    <div class="orbit-item" style="--angle:120deg"><span>MySQL</span></div>
+                    <div class="orbit-item" style="--angle:210deg"><span>Android</span></div>
+                    <div class="orbit-item" style="--angle:300deg"><span>OpenCV</span></div>
+                </div>
+            </div>
+
+            <!-- Skill cards grid -->
+            <div class="skill-cards-grid">
+
+                <div class="skill-card">
+                    <div class="skill-card-icon">⚡</div>
+                    <div class="skill-card-ring">
+                        <svg viewBox="0 0 120 120">
+                            <circle cx="60" cy="60" r="50" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="8"/>
+                            <circle cx="60" cy="60" r="50" fill="none" stroke="url(#ring1)" stroke-width="8" stroke-linecap="round"
+                                stroke-dasharray="314" stroke-dashoffset="16" class="ring-progress" data-progress="95"/>
+                            <defs><linearGradient id="ring1" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#667eea"/><stop offset="100%" stop-color="#f093fb"/></linearGradient></defs>
+                        </svg>
+                        <span class="ring-percent">95%</span>
+                    </div>
+                    <h4>C++</h4>
+                    <p>Systems & Algorithms</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-card-icon">☕</div>
+                    <div class="skill-card-ring">
+                        <svg viewBox="0 0 120 120">
+                            <circle cx="60" cy="60" r="50" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="8"/>
+                            <circle cx="60" cy="60" r="50" fill="none" stroke="url(#ring2)" stroke-width="8" stroke-linecap="round"
+                                stroke-dasharray="314" stroke-dashoffset="50" class="ring-progress" data-progress="84"/>
+                            <defs><linearGradient id="ring2" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#ed7524"/><stop offset="100%" stop-color="#f7df1e"/></linearGradient></defs>
+                        </svg>
+                        <span class="ring-percent">84%</span>
+                    </div>
+                    <h4>Java</h4>
+                    <p>OOP & Android Dev</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-card-icon">🐍</div>
+                    <div class="skill-card-ring">
+                        <svg viewBox="0 0 120 120">
+                            <circle cx="60" cy="60" r="50" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="8"/>
+                            <circle cx="60" cy="60" r="50" fill="none" stroke="url(#ring3)" stroke-width="8" stroke-linecap="round"
+                                stroke-dasharray="314" stroke-dashoffset="56" class="ring-progress" data-progress="82"/>
+                            <defs><linearGradient id="ring3" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#3776ab"/><stop offset="100%" stop-color="#4db8ff"/></linearGradient></defs>
+                        </svg>
+                        <span class="ring-percent">82%</span>
+                    </div>
+                    <h4>Python</h4>
+                    <p>Scripting & CV</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-card-icon">🌐</div>
+                    <div class="skill-card-ring">
+                        <svg viewBox="0 0 120 120">
+                            <circle cx="60" cy="60" r="50" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="8"/>
+                            <circle cx="60" cy="60" r="50" fill="none" stroke="url(#ring4)" stroke-width="8" stroke-linecap="round"
+                                stroke-dasharray="314" stroke-dashoffset="16" class="ring-progress" data-progress="95"/>
+                            <defs><linearGradient id="ring4" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#e44d26"/><stop offset="100%" stop-color="#264de4"/></linearGradient></defs>
+                        </svg>
+                        <span class="ring-percent">95%</span>
+                    </div>
+                    <h4>HTML / CSS</h4>
+                    <p>Responsive Design</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-card-icon">✨</div>
+                    <div class="skill-card-ring">
+                        <svg viewBox="0 0 120 120">
+                            <circle cx="60" cy="60" r="50" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="8"/>
+                            <circle cx="60" cy="60" r="50" fill="none" stroke="url(#ring5)" stroke-width="8" stroke-linecap="round"
+                                stroke-dasharray="314" stroke-dashoffset="75" class="ring-progress" data-progress="76"/>
+                            <defs><linearGradient id="ring5" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#f7df1e"/><stop offset="100%" stop-color="#f093fb"/></linearGradient></defs>
+                        </svg>
+                        <span class="ring-percent">76%</span>
+                    </div>
+                    <h4>JavaScript</h4>
+                    <p>Frontend & Logic</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-card-icon">🗄️</div>
+                    <div class="skill-card-ring">
+                        <svg viewBox="0 0 120 120">
+                            <circle cx="60" cy="60" r="50" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="8"/>
+                            <circle cx="60" cy="60" r="50" fill="none" stroke="url(#ring6)" stroke-width="8" stroke-linecap="round"
+                                stroke-dasharray="314" stroke-dashoffset="63" class="ring-progress" data-progress="80"/>
+                            <defs><linearGradient id="ring6" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#00758f"/><stop offset="100%" stop-color="#00c8ff"/></linearGradient></defs>
+                        </svg>
+                        <span class="ring-percent">80%</span>
+                    </div>
+                    <h4>MySQL</h4>
+                    <p>Database Design</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-card-icon">📱</div>
+                    <div class="skill-card-ring">
+                        <svg viewBox="0 0 120 120">
+                            <circle cx="60" cy="60" r="50" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="8"/>
+                            <circle cx="60" cy="60" r="50" fill="none" stroke="url(#ring7)" stroke-width="8" stroke-linecap="round"
+                                stroke-dasharray="314" stroke-dashoffset="75" class="ring-progress" data-progress="75"/>
+                            <defs><linearGradient id="ring7" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#3ddc84"/><stop offset="100%" stop-color="#00c8ff"/></linearGradient></defs>
+                        </svg>
+                        <span class="ring-percent">75%</span>
+                    </div>
+                    <h4>Android</h4>
+                    <p>Mobile Development</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-card-icon">👁️</div>
+                    <div class="skill-card-ring">
+                        <svg viewBox="0 0 120 120">
+                            <circle cx="60" cy="60" r="50" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="8"/>
+                            <circle cx="60" cy="60" r="50" fill="none" stroke="url(#ring8)" stroke-width="8" stroke-linecap="round"
+                                stroke-dasharray="314" stroke-dashoffset="94" class="ring-progress" data-progress="70"/>
+                            <defs><linearGradient id="ring8" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#43e97b"/><stop offset="100%" stop-color="#38f9d7"/></linearGradient></defs>
+                        </svg>
+                        <span class="ring-percent">70%</span>
+                    </div>
+                    <h4>OpenCV</h4>
+                    <p>Computer Vision</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's work together!</h3>
+                    <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="icon">📧</span>
+                            <span>Devangdpr@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="icon">📱</span>
+                            <span>+91 9784679969</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="icon">📍</span>
+                            <span>Jaipur, Rajasthan, India</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/devangdpr" target="_blank" class="social-link">GitHub</a>
+                        <a href="https://www.linkedin.com/in/devangjain17" target="_blank" class="social-link">LinkedIn</a>
+                        <a href="https://x.com/DJTECH13770714" target="_blank" class="social-link">Twitter</a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm" onsubmit="return false;">
+                    <div class="form-group">
+                        <input type="text" id="cf-name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="cf-email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="cf-subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="cf-message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="button" id="sendBtn" class="btn btn-primary">Send Message 🚀</button>
+                    <p class="form-note" id="form-status"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Devang Jain. All rights reserved. | <a href="resume.html" target="_blank" style="color:var(--primary-color)">View Resume</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="gravity-cards.js"></script>
+    <script src="cs-background.js"></script>
+    <script src="logo.js"></script>
+    <script>
+        // CONTACT FORM - inline to guarantee it runs
+        document.getElementById('sendBtn').addEventListener('click', async function() {
+            var name    = document.getElementById('cf-name').value.trim();
+            var email   = document.getElementById('cf-email').value.trim();
+            var subject = document.getElementById('cf-subject').value.trim();
+            var message = document.getElementById('cf-message').value.trim();
+            var status  = document.getElementById('form-status');
+            var btn     = this;
+
+            if (!name || !email || !subject || !message) {
+                status.style.color = '#f7df1e';
+                status.textContent = '⚠️ Please fill all fields!';
+                return;
+            }
+
+            btn.textContent = 'Sending...';
+            btn.disabled = true;
+            status.textContent = '';
+
+            fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+                body: JSON.stringify({
+                    access_key: '768ef2a3-b3de-43d7-9d54-224f62741f43',
+                    name: name,
+                    email: email,
+                    subject: subject,
+                    message: message
+                })
+            })
+            .then(function(res) { return res.json(); })
+            .then(function(data) {
+                if (data.success) {
+                    status.style.color = '#43e97b';
+                    status.textContent = '✅ Message sent! Devang will reply soon.';
+                    document.getElementById('cf-name').value = '';
+                    document.getElementById('cf-email').value = '';
+                    document.getElementById('cf-subject').value = '';
+                    document.getElementById('cf-message').value = '';
+                } else {
+                    status.style.color = '#f5576c';
+                    status.textContent = '❌ Error: ' + data.message;
+                }
+                btn.textContent = 'Send Message 🚀';
+                btn.disabled = false;
+            })
+            .catch(function() {
+                status.style.color = '#f5576c';
+                status.textContent = '❌ Network error. Please try again.';
+                btn.textContent = 'Send Message 🚀';
+                btn.disabled = false;
+            });
+        });
+    </script>
+</body>
+</html>
